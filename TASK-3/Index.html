@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        <form class="converter-form" id="converterForm">
+            <div class="input-group">
+                <label for="temperature">Enter Temperature:</label>
+                <input type="text" id="temperature" placeholder="e.g. 32" autocomplete="off">
+                <div class="error" id="error">Please enter a valid number</div>
+            </div>
+
+            <div class="input-group">
+                <label>Convert From:</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="from-celsius" name="from-unit" value="celsius" checked>
+                        <label for="from-celsius">Celsius (°C)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="from-fahrenheit" name="from-unit" value="fahrenheit">
+                        <label for="from-fahrenheit">Fahrenheit (°F)</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Convert To:</label>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="to-celsius" name="to-unit" value="celsius">
+                        <label for="to-celsius">Celsius (°C)</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="to-fahrenheit" name="to-unit" value="fahrenheit" checked>
+                        <label for="to-fahrenheit">Fahrenheit (°F)</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <button type="button" id="convert-btn">Convert</button>
+        </form>
+
+        <div class="result" id="result">
+            <div class="result-value" id="result-value"></div>
+            <div class="result-unit" id="result-unit">Select options and click Convert</div>
+        </div>
+    </div>
+    <script src="web.js"></script>
+
+
+
+</body>
+
+</html>
